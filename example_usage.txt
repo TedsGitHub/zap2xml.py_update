@@ -1,0 +1,5 @@
+./zap2xml.pl -d 1 -F -j -A "new live" -u USER -p PASSWORD
+./zap2xml.pl -d 1 -F -D -j -A "new live" -u USER -p PASSWORD # for additional show information
+
+Where USER = your user name on gracenote (should be the same as when zap2it was around)
+Where PASSWORD = your password on gracenote (should be the same as when zap2it was around)
