@@ -1556,10 +1556,10 @@ else:
             rs = getURL(f"{urlRoot}api/grid{params}", 1, requests_session)
             if rs == '':
                 break
-            # rc = rs.encode('utf-8')
+            rc = rs.encode('utf-8')
             with open(fn, 'wb') as f:
                 compressor = compressor = zlib.compressobj(wbits=zlib.MAX_WBITS | 16)
-                compressed_data = compressor.compress(rs)
+                compressed_data = compressor.compress(rc)
                 compressed_data += compressor.flush()
                 f.write(compressed_data)
 
